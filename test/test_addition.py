@@ -1,6 +1,6 @@
 from app.main import addition
 
-ls = [1,1,2,12]
+ls = [1,1,2,121]
 
-print(*ls)
+print(addition(*ls))
 
