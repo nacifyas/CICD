@@ -1,4 +1,4 @@
-[![App](https://github.com/nacifyas/CICD/actions/workflows/test.yml/badge.svg)](https://github.com/nacifyas/CICD/actions/workflows/test.yml)
+[![Test](https://github.com/nacifyas/CICD/actions/workflows/test.yml/badge.svg)](https://github.com/nacifyas/CICD/actions/workflows/test.yml)
 # Example Package
 
 This is a simple example package. You can use
