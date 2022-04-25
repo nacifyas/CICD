@@ -15,6 +15,7 @@ Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENCE
 
+[![Tests](https://github.com/nacifyas/CICD/actions/workflows/test.yml/badge.svg)](https://github.com/nacifyas/CICD/actions/workflows/test.yml)
 # Example Package
 
 This is a simple example package. You can use
