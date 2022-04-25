@@ -12,22 +12,22 @@ jobs:
       os: [ubuntu-latest, windows-latest]
       python-versions: ['3.6','3.7','3.8','3.9']
 
-  steps:
-  - uses: actions/checkout@v3
-  - name: Set up Python ${{ matrix.python-version }}
-    uses: actions/setup-python@v3
-    with:
-      python-version: ${{ matrix.python-version }}
-  - name: Install dependencies
-    run: |
-      python -m pip install --upgrade pip
-      pip install -r requirements.txt
-  - name: Test with pytest
-    run: |
-      pip install -r requirements_dev.txt
-      pip install tox tox-gh-actions
-  - name: Testing with tox
-    run: tox
-  - name: Testing with mypy
-    run: |
-      mypy src
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Test with pytest
+      run: |
+        pip install -r requirements_dev.txt
+        pip install tox tox-gh-actions
+    - name: Testing with tox
+      run: tox
+    - name: Testing with mypy
+      run: |
+        mypy src
