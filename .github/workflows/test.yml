@@ -7,10 +7,10 @@ on:
 jobs:
   test:
     runs-on: ${{ matrix.os }}
-    strategy:
-    matrix:
-      os: [ubuntu-latest, windows-latest]
-      python-versions: ['3.6','3.7','3.8','3.9']
+      strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-versions: ['3.6','3.7','3.8','3.9']
 
     steps:
     - uses: actions/checkout@v3
@@ -28,6 +28,3 @@ jobs:
         pip install tox tox-gh-actions
     - name: Testing with tox
       run: tox
-    - name: Testing with mypy
-      run: |
-        mypy src
