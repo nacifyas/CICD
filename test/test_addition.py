@@ -16,7 +16,7 @@ class TestClassDemoInstance:
 
     def test_one(self):
         self.value = 1
-        assert self.value == 1
+        assert self.value == 5
 
     def test_two(self):
-        assert self.value == 0
+        assert self.value == 11
